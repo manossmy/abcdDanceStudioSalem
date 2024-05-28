@@ -1,0 +1,51 @@
+<!-- <button (click)="sendEnquiryEmail()">Helo</button> -->
+<div class="container">
+    <div class="container-wrapper">
+        <div class="left-content">
+            <img src="../../../assets/icons/logoAbcd.png" *ngIf="enquiryClicked === ''" />
+            <img src="../../../assets/icons/sangeetIcon.png" *ngIf="enquiryClicked === 'REGULAR'" />
+            <img src="../../../assets/icons/bdayIcon.png" *ngIf="enquiryClicked === 'BIRTHDAY'" />
+            <img src="../../../assets/icons/djIcon.png" *ngIf="enquiryClicked === 'DJ'" />
+            <img src="../../../assets/icons/marriageIcon.png" *ngIf="enquiryClicked === 'MARRIAGE'" />
+        </div>
+        <div class="right-content">
+            <p class="m-0 text-center">ABCD Enquiry Form 👋</p>
+            <form [formGroup]="formDetails" (ngSubmit)="sendEnquiryEmail()">
+                <div>
+                    <label>Name</label><br>
+                    <input type="text" name="enquirer_name" formControlName="enquirer_name" />
+                </div>
+                <div>
+                    <label>Function Type</label><br>
+                    <select name="enquirer_message" formControlName="enquirer_message">
+                        <option value="">-- Select --</option>
+                        <option value="Marriage">Marriage Events</option>
+                        <option value="Birthday">Birthday Suprises Dance</option>
+                        <option value="DJ Parties">DJ Parties</option>
+                        <option value="Regular Classes">Regular Classes</option>
+                        <option value="Sangeeth Event">Sangeeth Event</option>
+                        <option value="College Culturals">College Culturals</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Place</label><br>
+                    <input type="text" name="enquirer_place" formControlName="enquirer_place" />
+                </div>
+                <div>
+                    <label>Mobile Number</label><br>
+                    <input type="number" name="enquirer_contact_number" formControlName="enquirer_contact_number" />
+                </div>
+                <div>
+                    <label>Event Date</label><br>
+                    <input type="date" name="enquirer_event_date" formControlName="enquirer_event_date"
+                        [min]="currentDate" />
+                </div>
+                <div class="submit-btn">
+                    <button type="submit" [ngClass]="!formDetails.valid ? 'disable-class' : 'active-class'"
+                        [disabled]="!formDetails.valid">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

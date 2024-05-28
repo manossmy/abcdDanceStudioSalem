@@ -1,0 +1,26 @@
+.position-fixed {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.position-none {
+    position: none;
+}
+
+form {
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    
+}

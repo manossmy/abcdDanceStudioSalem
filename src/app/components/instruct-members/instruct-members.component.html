@@ -1,0 +1,143 @@
+<!-- INSTRUCTORS CONTENT -->
+<div class="container mb-4" style="width: 75%;">
+    <h4 class="text-center">Instructors</h4>
+    <div class="d-flex justify-content-evenly align-items-center">
+        <div class="row" style="display: contents;">
+            <div class="col-3 p-2" *ngFor="let item of teamMembers"
+                [ngClass]="item.name === 'Karthik_abcd' ? 'w-300px' : ''">
+                <div class="card instructor-card card-effect" [ngClass]="item.name === 'Karthik_abcd' ? 'w-300px' : ''">
+                    <div style="display: flex;justify-content: start;align-items: center;">
+                        <img [src]="item.photo" class="img-fluid" [alt]="item.name"
+                            style="width: 50%; padding: 16px; border-radius: 50%;">
+                        <div>
+                            <h6><i class="pi pi-instagram pe-2"></i>{{ item.name }}</h6>
+                            <label>{{item.role}} </label><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<!-- EVENTS AND OTHER THINGS -->
+<div class="container mt-5 mb-5">
+    <div class="d-flex justify-content-evenly">
+        <img id="karthik" src="assets/instructors/karthikImg.jpeg" alt="Founder"
+            style="border-radius: 5px; width: 30%;" />
+        <section>
+            <!-- 1 section -->
+            <div class="card custom-card">
+                <div class="circle">
+                    <img src="../../../assets/icons/sangeetIcon.png" style="width: 46px;" />
+                </div>
+                <div class="card-body">
+                    <div style="display: flex;
+                    align-items: center;
+                    justify-content: space-between;">
+                        <div>
+                            <div class="card-title">Regular Classes</div>
+                            <div class="card-text">Kids & Adult, Summer classes, Workshop...</div>
+                        </div>
+                        <div>
+                            <button class="btn" style="height: 22px;
+                        width: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 12px;" (click)="enquiryEvent('REGULAR')">Enquiry</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="../../../assets/icons/arrow.png"
+                style="width: 100px; rotate: 252deg; position: absolute; top: 130px; left: 150px;" />
+            <!-- 2 section -->
+            <div class="card custom-card custom-card-2">
+                <div class="circle">
+                    <img src="../../../assets/icons/bdayIcon.png" style="width: 50px;" />
+                </div>
+                <div class="card-body">
+                    <div style="display: flex;
+                    align-items: center;
+                    justify-content: space-between;">
+                        <div>
+                            <div class="card-title">Birthday Party</div>
+                            <div class="card-text">Surprise Dance...</div>
+                        </div>
+                        <div>
+                            <button class="btn" style="height: 22px;
+                        width: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 12px;" (click)="enquiryEvent('BIRTHDAY')">Enquiry</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="../../../assets/icons/arrow.png" style="width: 100px;
+            rotate: 95deg;
+            position: absolute;
+            top: 270px;
+            right: 118px;
+            transform: scaleX(-1);" />
+            <!-- 3 section -->
+            <div class="card custom-card custom-card-3">
+                <div class="circle">
+                    <img src="../../../assets/icons/djIcon.png" style="width: 50px;" />
+                </div>
+                <div class="card-body">
+                    <div style="display: flex;
+                    align-items: center;
+                    justify-content: space-between;">
+                        <div>
+                            <div class="card-title">DJ Parties</div>
+                            <div class="card-text">Newyear, College Culturals...</div>
+                        </div>
+                        <div>
+                            <button class="btn" style="height: 22px;
+                        width: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 12px;" (click)="enquiryEvent('DJ')">Enquiry</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="../../../assets/icons/arrow.png" style="width: 100px;
+                rotate: 274deg;
+                position: absolute;
+                top: 414px;
+                left: 185px;" />
+            <!-- 4th section -->
+            <div class="card custom-card custom-card-4">
+                <div class="circle">
+                    <img src="../../../assets/icons/marriageIcon.png" style="width: 52px;" />
+                </div>
+                <div class="card-body">
+                    <div style="display: flex;
+                        align-items: center;
+                        justify-content: space-between;">
+                        <div>
+                            <div class="card-title">Marraige Events</div>
+                            <div class="card-text">Groom/Bride Entry, Flashmob..</div>
+                        </div>
+                        <div>
+                            <button class="btn" style="height: 22px;
+                                width: 50px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 12px;" (click)="enquiryEvent('MARRIAGE')">Enquiry</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<hr>

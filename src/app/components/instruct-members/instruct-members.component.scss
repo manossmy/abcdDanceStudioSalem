@@ -1,0 +1,129 @@
+h6 {
+  margin: 0px;
+}
+
+button {
+  background: white;
+  color: black;
+  border: 1px solid #c60d60;
+}
+
+h4 {
+  font-family: cursive;
+}
+
+.w-300px {
+  width: 300px !important;
+}
+
+label {
+  font-size: 12px;
+}
+
+#karthik {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.whole-wrapper {
+  background-color: transparent;
+  // box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+  //   rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+  //   rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.instructor-card {
+  box-shadow: rgb(16 16 212 / 27%) 0px 30px 60px -12px inset,
+    rgb(255 32 32 / 68%) 0px 18px 36px -18px inset;
+  width: 250px;
+}
+
+section {
+  width: 50%;
+  position: relative;
+}
+.custom-card {
+  width: 45%;
+  margin-top: 24px;
+}
+.custom-card-2 {
+  position: absolute;
+  right: 0px;
+  top: 123px;
+}
+.custom-card-3 {
+  position: absolute;
+  left: 55px;
+  top: 270px;
+}
+.custom-card-4 {
+  position: absolute;
+  right: 5px;
+  top: 444px;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #b3115a;
+  position: absolute;
+  top: -25px;
+  left: 15px;
+
+  img {
+    padding: 3px;
+  }
+}
+
+.card-body {
+  padding-top: 24px;
+  border-radius: 4px;
+  background: linear-gradient(272deg, #6f6f73, #c60d60);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  .card-title {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: cursive;
+    margin: 0px;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+}
+
+.card-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-effect:hover {
+  color: white;
+  cursor: pointer;
+  box-shadow: 1px 1px 25px 10px lightgray;
+  background: linear-gradient(272deg, #6f6f73, #c60d60);
+}
+
+.card-effect:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(236, 236, 236, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.card-effect:hover:before {
+  left: 100%;
+}

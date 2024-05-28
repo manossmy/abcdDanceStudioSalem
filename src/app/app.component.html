@@ -1,0 +1,13 @@
+<app-header (menuHighlight)="getMenuHighlighted($event)" [navEnquiry]="highlighted"></app-header>
+<div *ngIf="highlighted === 'HOME'">
+    <app-scrollable-banner></app-scrollable-banner>
+    <app-instruct-members (enquiry)="getMenuHighlighted($event)"></app-instruct-members>
+    <app-event-yt-iframe></app-event-yt-iframe>
+</div>
+<div *ngIf="highlighted === 'ENQUIRY'">
+    <app-enquiry></app-enquiry>
+</div>
+<div *ngIf="highlighted === 'INFO'">
+    <app-info [highLightedTab]="highlighted"></app-info>
+</div>
+<app-footer [ngClass]="highlighted !== 'HOME' ? 'position-fixed' : 'position-none'"></app-footer>

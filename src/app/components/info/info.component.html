@@ -1,0 +1,190 @@
+<div class="container" style="margin-bottom: 104px;">
+    <div class="row row-plus-wrapper">
+        <div class="col-7">
+            <div class="card p-2 left-content">
+                <strong><i style="color: #db0466; text-decoration: underline;">About ABCD Dance Studio</i></strong>
+                <div class="about-content">
+                    <p>Welcome to ABCD Dance Studio, where passion meets performance! Founded in 2016, ABCD Dance Studio
+                        has become a vibrant hub for dance enthusiasts of all ages and skill levels. Our mission is to
+                        inspire and nurture the love for dance in a fun, supportive, and professional environment.</p>
+
+                    <p>
+                        At ABCD Dance Studio, we believe that dance is more than just movement; it’s a way to express
+                        yourself, connect with others, and experience the joy of creativity. Join us and be a part of
+                        our
+                        dance family. Whether you’re looking to prepare for a special event, pick up a new hobby, or
+                        pursue
+                        a professional dance career, ABCD Dance Studio is here to guide and support you every step of
+                        the
+                        way.
+                    </p>
+
+                    <div class="card mb-3"
+                        style="text-align: justify; padding: 5px 10px 5px 0px; background: #f4a4602e;">
+                        <p class="text-center mb-0"><strong class="f-s-15">Our Offerings:</strong></p>
+                        <ul>
+                            <li>
+                                <strong>Sangeet & Wedding Events:</strong> Make your special day unforgettable with our
+                                personalized Sangeet and
+                                wedding dance choreography. Our experienced instructors will help you create beautiful,
+                                memorable
+                                performances for your celebrations.
+                            </li>
+                            <li>
+                                <strong>Dance Events:</strong> Whether it's a corporate event, birthday party, or any
+                                special occasion, we bring
+                                the energy and excitement with our dynamic dance performances. Let us add a spark to
+                                your
+                                event with
+                                customized dance routines.
+                            </li>
+                            <li>
+                                <strong>DJ Events:</strong> Our DJ services are designed to keep the party going all
+                                night
+                                long. With a mix of
+                                the latest hits and timeless classics, our DJs will ensure your event is a memorable
+                                one.
+                            </li>
+                            <li>
+                                <strong>Regular Classes:</strong> From contemporary to classical, hip-hop to Bollywood,
+                                our
+                                regular dance classes
+                                cater to a variety of styles. Our curriculum is designed to help you learn and grow as a
+                                dancer,
+                                whether you’re a beginner or an advanced performer.
+                            </li>
+                            <li>
+                                <strong>Kids Batch:</strong> Our children’s dance classes are crafted to be fun and
+                                educational. We focus on
+                                building coordination, confidence, and creativity in a positive and engaging atmosphere.
+                            </li>
+                            <li>
+                                <strong>Adult Batch:</strong> It’s never too late to start dancing! Our adult dance
+                                classes
+                                are perfect for those
+                                looking to learn new skills, stay fit, and meet like-minded dance enthusiasts.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card mb-3"
+                        style="text-align: justify; padding: 5px 10px 5px 0px; background: #3c546029;">
+                        <p class="text-center mb-0"><strong class="f-s-15">Why Choose Us?</strong></p>
+                        <ul>
+                            <li>
+                                <strong>Expert Instructors:</strong> Our team of professional and passionate instructors
+                                brings a wealth of
+                                experience and a commitment to helping each student reach their full potential.
+                            </li>
+                            <li>
+                                <strong>Community Focus:</strong> We pride ourselves on creating a welcoming and
+                                inclusive
+                                community where
+                                everyone can share their love for dance.
+                            </li>
+                            <li>
+                                <strong>State-of-the-Art Facilities:</strong> Our studio is equipped with modern
+                                amenities
+                                and a spacious dance
+                                floor, providing the perfect environment for learning and practicing.
+                            </li>
+                            <li>
+                                <strong>Performance Opportunities:</strong> We offer numerous opportunities for our
+                                students
+                                to showcase their
+                                talents through performances, competitions, and community events.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card mb-3"
+                        style="text-align: justify; padding: 5px 14px 5px 14px; background: #f1f6513b;">
+                        <p class="text-center mb-0"><strong class="f-s-15">Contact Us:</strong></p>
+                        <p class="mb-0">For more information about our classes and services, get in touch with us on
+                            social media</p>
+
+                        <p class="pt-2"><b><i>
+                                    Feel free to customize any part of this description to better fit your studio’s
+                                    unique
+                                    personality
+                                    and offerings.
+                                </i></b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-5 right-side-content">
+            <div class="card text-center">
+                <h5>ABCD Crew</h5>
+                <div class="photo-wrap">
+                    <div class="team-mem" *ngFor="let item of teamMemberDetails; let i=index">
+                        <a [href]="item.instaLink" target="_blank">
+                            <img [src]="item.photo" [alt]="item.name" [title]="item.tooltip" /><br>
+                            <label> {{item.name}} </label>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center;" *ngIf="highLightedTab === 'INFO'">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade mt-3 mb-3" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item" [ngClass]="{'active': highLightedTab === 'INFO'}" data-bs-interval="5000">
+                            <img src="assets/reviewComment/01review.jpeg" class="d-block w-100" alt="reviews">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/reviewComment/02review.jpeg" class="d-block w-100" alt="reviews">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/reviewComment/03review.jpeg" class="d-block w-100" alt="reviews">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/reviewComment/04review.jpeg" class="d-block w-100" alt="reviews">
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/reviewComment/05review.jpeg" class="d-block w-100" alt="reviews">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/reviewComment/06review.jpeg" class="d-block w-100" alt="reviews">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/reviewComment/07review.jpeg" class="d-block w-100" alt="reviews">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/reviewComment/08review.jpeg" class="d-block w-100" alt="reviews">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/reviewComment/09review.jpeg" class="d-block w-100" alt="reviews">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/reviewComment/10review.jpeg" class="d-block w-100" alt="reviews">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/reviewComment/11review.jpeg" class="d-block w-100" alt="reviews">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/reviewComment/12review.jpeg" class="d-block w-100" alt="reviews">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/reviewComment/13review.jpeg" class="d-block w-100" alt="reviews">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="assets/reviewComment/14review.jpeg" class="d-block w-100" alt="reviews">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

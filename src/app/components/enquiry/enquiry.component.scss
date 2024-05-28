@@ -1,0 +1,73 @@
+.container {
+  .container-wrapper {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 178px);
+    justify-content: space-evenly;
+    margin: 12px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    // background: linear-gradient(272deg, #6f6f73, #c60d60);
+    background: linear-gradient(272deg, #9f9fd7, #93e2ac);
+
+    .left-content {
+      padding-top: 16px;
+      border-radius: 5px;
+      background: #ffffff69;
+      border: 2px solid rgba(255, 255, 255, 0.288);
+      
+      img {
+          width: 333px;
+        }
+    }
+    
+    .right-content {
+        width: 380px;
+        color: black;
+        border-radius: 5px;
+        padding: 20px 30px 50px 30px;
+        background-color: rgb(255 255 255 / 50%);
+        border: 2px solid rgba(255, 255, 255, 0.288);
+
+      p {
+        font-family: cursive;
+        font-size: 15px;
+      }
+      label {
+        font-size: 12px;
+      }
+      input, select {
+        width: 100%;
+        border-radius: 4px;
+        border: none;
+        font-size: 13px;
+        padding: 4px;
+      }
+
+      .submit-btn {
+        text-align: center;
+        margin-top: 26px;
+
+        button {
+          width: 70%;
+          font-weight: 500;
+          font-size: 14px;
+          padding: 6px;
+          border: none;
+          color: white;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.disable-class {
+  background-color: gray !important;
+  color: white !important;
+}
+
+.active-class {
+  background: linear-gradient(272deg, #6f6f73, #c60d60);
+}

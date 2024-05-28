@@ -1,0 +1,24 @@
+<nav class="sticky-top">
+  <div class="nav-content-wrapper d-flex justify-content-between">
+    <div class="left-content d-flex justify-content-start align-items-center">
+      <img class="img-thumbnail m-1 ms-3 me-0" src="assets/icons/logoAbcd.png" alt="logo" />
+      <h6 class="m-0">Any Body Can Dance</h6>
+    </div>
+    <nav class="navbar navbar-light">
+      <div class="container-fluid p-0">
+        <a class="navbar-brand" href="#" [ngClass]="highlightedMenu === 'HOME' ? 'menu-highlight' : ''"
+          (click)="selectedMenu('HOME')">
+          <p class="ps-1 pe-1 m-0">Home</p>
+        </a>
+        <a class="navbar-brand" href="#" [ngClass]="highlightedMenu === 'ENQUIRY' ? 'menu-highlight' : ''"
+          (click)="selectedMenu('ENQUIRY')">
+          <p class="ps-1 pe-1 m-0">Enquiry</p>
+        </a>
+        <a class="navbar-brand" href="#" [ngClass]="highlightedMenu === 'INFO' ? 'menu-highlight' : ''"
+          (click)="selectedMenu('INFO')">
+          <p class="ps-1 pe-1 m-0">Info</p>
+        </a>
+      </div>
+    </nav>
+  </div>
+</nav>
