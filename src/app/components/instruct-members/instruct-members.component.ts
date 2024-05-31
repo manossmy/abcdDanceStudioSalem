@@ -12,17 +12,20 @@ export class InstructMembersComponent {
     {
       name: 'Hari_abcd',
       photo: 'assets/memberPhotos/hari.PNG',
-      role: 'Team Member',
+      role: 'Choreographer',
+      instaLink:'https://www.instagram.com/renivprasath_abcd?igsh=emNqaTEyaDdwNWx5'
     },
     {
       name: 'Karthik_abcd',
       photo: 'assets/memberPhotos/karthik.PNG',
-      role: 'Founder',
+      role: 'Proprietor',
+      instaLink: 'https://www.instagram.com/karthik_abcd?igsh=cWc5OHp4Z3UyZHVx'
     },
     {
       name: 'Tamil_abcd',
       photo: 'assets/memberPhotos/tamil.JPG',
-      role: 'Team Member',
+      role: 'Choreographer',
+      instaLink:'https://www.instagram.com/tamizh_abcd?igsh=MXM0OGczYmh5d240ZQ=='
     },
   ];
   constructor(private commonService: CommonService) {}

@@ -2,11 +2,55 @@
 <div class="container">
     <div class="container-wrapper">
         <div class="left-content">
-            <img src="../../../assets/icons/logoAbcd.png" *ngIf="enquiryClicked === ''" />
-            <img src="../../../assets/icons/sangeetIcon.png" *ngIf="enquiryClicked === 'REGULAR'" />
-            <img src="../../../assets/icons/bdayIcon.png" *ngIf="enquiryClicked === 'BIRTHDAY'" />
+            <img src="../../../assets/icons/vibeWithAbcd.png" class="logo-abcd" *ngIf="enquiryClicked === ''" />
+            <div *ngIf="enquiryClicked === 'REGULAR'">
+                <!-- <img src="../../../assets/icons/sangeetIcon.png"  /> -->
+                <div id="carouselExampleFade" class="carousel slide carousel-fade mt-3 mb-3" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="assets/eventPics/01kids.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="assets/eventPics/02kids.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="assets/eventPics/03kids.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div *ngIf="enquiryClicked === 'MARRIAGE'">
+                <!-- <img src="../../../assets/icons/sangeetIcon.png"  /> -->
+                <!-- <img src="../../../assets/icons/bdayIcon.png" *ngIf="enquiryClicked === 'BIRTHDAY'" /> -->
+                <div id="carouselExampleFade" class="carousel slide carousel-fade mt-3 mb-3" data-bs-ride="carousel" >
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="assets/eventPics/marraige01.PNG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="assets/eventPics/marraige02.PNG" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
             <img src="../../../assets/icons/djIcon.png" *ngIf="enquiryClicked === 'DJ'" />
-            <img src="../../../assets/icons/marriageIcon.png" *ngIf="enquiryClicked === 'MARRIAGE'" />
+            <img src="../../../assets/icons/marriageIcon.png" *ngIf="enquiryClicked === 'BIRTHDAY'" />
         </div>
         <div class="right-content">
             <p class="m-0 text-center">ABCD Enquiry Form 👋</p>
@@ -47,5 +91,13 @@
                 </div>
             </form>
         </div>
+    </div>
+</div>
+<div *ngIf="isLoading" class="loader">
+    <div class="confirm-modal">
+        <div class="spinner-border" role="status">
+            <span class="sr-only"></span>
+        </div>
+        <p class="m-0 ps-2"> Submitting.... </p>
     </div>
 </div>

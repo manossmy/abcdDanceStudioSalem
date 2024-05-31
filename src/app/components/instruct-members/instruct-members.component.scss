@@ -1,7 +1,9 @@
 h6 {
   margin: 0px;
+  }
+a{
+  text-decoration: none;
 }
-
 button {
   background: white;
   color: black;
@@ -18,6 +20,14 @@ h4 {
 
 label {
   font-size: 12px;
+  border-radius: 5px;
+      padding: 0px 10px;
+      font-family: cursive;
+}
+
+.label1 {
+  color: white;
+    background: #f66c04;
 }
 
 #karthik {
@@ -106,6 +116,10 @@ section {
   cursor: pointer;
   box-shadow: 1px 1px 25px 10px lightgray;
   background: linear-gradient(272deg, #6f6f73, #c60d60);
+
+  .label0, .label2 {
+    background: rgb(241, 12, 184);
+}
 }
 
 .card-effect:before {

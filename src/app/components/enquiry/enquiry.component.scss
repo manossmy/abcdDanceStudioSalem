@@ -12,10 +12,12 @@
     background: linear-gradient(272deg, #9f9fd7, #93e2ac);
 
     .left-content {
-      padding-top: 16px;
+      // padding-top: 16px;
       border-radius: 5px;
       background: #ffffff69;
       border: 2px solid rgba(255, 255, 255, 0.288);
+  height: 353px;
+  width: 337px;
       
       img {
           width: 333px;
@@ -70,4 +72,43 @@
 
 .active-class {
   background: linear-gradient(272deg, #6f6f73, #c60d60);
+}
+
+.logo-abcd {
+  padding-top: 16px;
+}
+
+.loader {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 200px;
+
+.confirm-modal {
+    background: #9ea0d6;
+    box-shadow: 3px 3px 5px gray;
+    width: 250px;
+    border-radius: 10px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    div {
+      font-size: 10px;
+      width: 16px;
+      height: 16px;
+    }
+
+    p{
+      font-size: 14px;
+    font-weight: 500;
+    color: white;
+    }
+}
 }

@@ -18,15 +18,13 @@ export class InfoComponent implements AfterViewInit  {
     {
       name: 'Hari',
       photo: 'assets/memberPhotos/hari.PNG',
-      instaLink:
-        'https://www.instagram.com/renivprasath_abcd?igsh=emNqaTEyaDdwNWx5',
+      instaLink:'https://www.instagram.com/renivprasath_abcd?igsh=emNqaTEyaDdwNWx5',
       tooltip: 'renivprasath_abcd',
     },
     {
       name: 'Tamil',
       photo: 'assets/memberPhotos/tamil.JPG',
-      instaLink:
-        'https://www.instagram.com/tamizh_abcd?igsh=MXM0OGczYmh5d240ZQ==',
+      instaLink:'https://www.instagram.com/tamizh_abcd?igsh=MXM0OGczYmh5d240ZQ==',
       tooltip: 'tamizh_abcd',
     },
     {

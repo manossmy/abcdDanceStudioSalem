@@ -3,18 +3,18 @@
     <h4 class="text-center">Instructors</h4>
     <div class="d-flex justify-content-evenly align-items-center">
         <div class="row" style="display: contents;">
-            <div class="col-3 p-2" *ngFor="let item of teamMembers"
+            <div class="col-3 p-2" *ngFor="let item of teamMembers; let i=index;"
                 [ngClass]="item.name === 'Karthik_abcd' ? 'w-300px' : ''">
-                <div class="card instructor-card card-effect" [ngClass]="item.name === 'Karthik_abcd' ? 'w-300px' : ''">
+                <a [href]="item.instaLink" target="_blank"><div class="card instructor-card card-effect" [ngClass]="item.name === 'Karthik_abcd' ? 'w-300px' : ''">
                     <div style="display: flex;justify-content: start;align-items: center;">
                         <img [src]="item.photo" class="img-fluid" [alt]="item.name"
                             style="width: 50%; padding: 16px; border-radius: 50%;">
                         <div>
                             <h6><i class="pi pi-instagram pe-2"></i>{{ item.name }}</h6>
-                            <label>{{item.role}} </label><br>
+                            <label [class]="'label'+i">{{item.role}} </label><br>
                         </div>
                     </div>
-                </div>
+                </div></a>
             </div>
         </div>
     </div>
